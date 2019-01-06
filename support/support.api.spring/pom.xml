@@ -3,9 +3,9 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>in.java</groupId>
+		<groupId>io.codebit</groupId>
 		<artifactId>support</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.0</version>
 	</parent>
 	<artifactId>support.api.spring</artifactId>
 	<name>${project.groupId}.${project.artifactId}</name>
@@ -69,15 +69,15 @@
 
 		<!--TMon -->
 		<dependency>
-			<groupId>in.java</groupId>
+			<groupId>io.codebit</groupId>
 			<artifactId>support.servlet</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>in.java</groupId>
+			<groupId>io.codebit</groupId>
 			<artifactId>support.mvc.spring</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>in.java</groupId>
+			<groupId>io.codebit</groupId>
 			<artifactId>support.util</artifactId>
 		</dependency>
 

@@ -1,4 +1,4 @@
-package in.java.support.spring.webui;
+package io.codebit.support.spring.webui;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

@@ -12,7 +12,7 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Aspect
-public class AsyncProcessor {
+public class AsyncAspect {
 	/**
 	 * daemon쓰레드 풀
 	 * {@link Async} 의 daemon 이 true일때 사용하는 쓰레드 풀

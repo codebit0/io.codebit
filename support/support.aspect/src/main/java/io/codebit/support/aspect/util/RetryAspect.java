@@ -11,9 +11,9 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 
 @Aspect
-public class RetryProcessor {
+public class RetryAspect {
 
-	private final transient Logger log = LogManager.getLogManager().getLogger(RetryProcessor.class.getName());
+	private final transient Logger log = LogManager.getLogManager().getLogger(RetryAspect.class.getName());
 	
 	@Around("execution(* * (..)) && @annotation(io.codebit.support.aspect.annotation.Retry)")
 	public Object retry(final ProceedingJoinPoint point) throws Throwable {

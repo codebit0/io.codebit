@@ -1,4 +1,4 @@
-package in.java.support.servlet.http;
+package io.codebit.support.servlet.http;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

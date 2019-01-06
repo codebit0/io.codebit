@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>support</artifactId>
-        <groupId>in.java</groupId>
-        <version>1.0.1</version>
+        <groupId>io.codebit</groupId>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>in.java</groupId>
+    <groupId>io.codebit</groupId>
     <artifactId>support.bci</artifactId>
     <name>${project.groupId}.${project.artifactId}</name>
 

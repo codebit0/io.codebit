@@ -1,4 +1,0 @@
-support:
-  ignite:
-      config:
-        file: config/default-config.xml

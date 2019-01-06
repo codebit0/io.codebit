@@ -28,9 +28,9 @@ import org.aspectj.lang.reflect.FieldSignature;
  * http://buraktas.com/cdi-dependency-injection-producer-method-example/
  */
 @Aspect("issingleton()")
-public class InjectProcessor {
+public class InjectAspect {
 
-	final Logger log = Logger.getLogger(InjectProcessor.class.getName());
+	final Logger log = Logger.getLogger(InjectAspect.class.getName());
 
 	/*
 	 * golbal pointcut

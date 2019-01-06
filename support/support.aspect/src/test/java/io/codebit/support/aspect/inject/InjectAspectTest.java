@@ -30,7 +30,7 @@ import javax.enterprise.inject.spi.CDI;
 public class InjectAspectTest {
 	
 	@Configuration
-	@ComponentScan("in.java.support.aspect.test")
+	@ComponentScan("io.codebit.support.aspect.test")
 //	@Profile("production")
     static class ContextConfiguration {
         // this bean will be injected into the OrderServiceTest class
@@ -57,9 +57,9 @@ public class InjectAspectTest {
 		assertNotNull(beanFactory);
 		CDI.setCDIProvider(new SpringCDIProvider(context));
 
-//		AspectClassFileTransformer transformer = new AspectClassFileTransformer(InjectProcessor.class);
+//		AspectClassFileTransformer transformer = new AspectClassFileTransformer(InjectAspect.class);
 //		transformer.context().options("-verbose");
-//		Instrument.transform(Arrays.asList(transformer), Arrays.asList("in.java.support.aspect.test..*"));
+//		Instrument.transform(Arrays.asList(transformer), Arrays.asList("io.codebit.support.aspect.test..*"));
 
 		Car car = new Car(new BetterEngine());
 		Seat seat = car.seat();

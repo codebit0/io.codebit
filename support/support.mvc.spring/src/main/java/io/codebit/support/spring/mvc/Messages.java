@@ -7,7 +7,7 @@ import io.codebit.support.util.ResourceBundle.Control.InheritBaseResourceBundleC
 
 public abstract class Messages
 {
-	private static String BUNDLE_NAME = "in.java.support.spring.mvc.messages"; //$NON-NLS-1$
+	private static String BUNDLE_NAME = "io.codebit.support.spring.mvc.messages"; //$NON-NLS-1$
 
 	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME, new InheritBaseResourceBundleControl());
 

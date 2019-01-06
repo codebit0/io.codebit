@@ -21,7 +21,7 @@ import java.util.function.Supplier;
  * @see javax.transaction.Transactional
  */
 @Aspect("percflow(topLevelPointcut())")
-public class TransationalProcessor {
+public class TransationalAspect {
 
     public static class TransactionalOperation {
         Transactional transactional;
@@ -76,7 +76,7 @@ public class TransationalProcessor {
     private void typePointcut(){
     }
 
-//    @Pointcut("(methodPointcut() || typePointcut()) && !within(TransationalProcessor)")
+//    @Pointcut("(methodPointcut() || typePointcut()) && !within(TransationalAspect)")
     @Pointcut("methodPointcut() || typePointcut()")
     private void methodAndTypePointcut(){
     }

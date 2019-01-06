@@ -30,14 +30,14 @@ import org.aspectj.lang.reflect.MethodSignature;
  * 
  */
 @Aspect("issingleton()")
-public class ValidProcessor {
+public class ValidAspect {
 
-	private final static transient Logger log = Logger.getLogger(ValidProcessor.class.getName());
+	private final static transient Logger log = Logger.getLogger(ValidAspect.class.getName());
 	
 	/**
 	 * JSR-303 Validator.
 	 */
-	private final transient Validator validator = ValidProcessor.build();
+	private final transient Validator validator = ValidAspect.build();
 
 	/**
 	 * 필드에 값을 읽을때 vaildation check
@@ -61,7 +61,7 @@ public class ValidProcessor {
 		String propertyName = field.getName();
 		Set<ConstraintViolation<Object>> constraints = this.validator.validateProperty(target, propertyName);
 		if (!constraints.isEmpty()) {
-			throw new ConstraintViolationException(ValidProcessor.pack(constraints), (Set<? extends ConstraintViolation<?>>) constraints);
+			throw new ConstraintViolationException(ValidAspect.pack(constraints), (Set<? extends ConstraintViolation<?>>) constraints);
 		}
 		return joinPoint.proceed();
 	}
@@ -87,7 +87,7 @@ public class ValidProcessor {
 			if (!constraints.isEmpty()) {
 				//파라미터 순서 대로 출력되도록 set ordered 를 지원하는 TreeSet으로 변경 
 				Collection<ConstraintViolation<Object>> _constraints = sortParamaterIndex(constraints);
-				throw new ConstraintViolationException(ValidProcessor.pack(_constraints), (Set<? extends ConstraintViolation<?>>) _constraints);
+				throw new ConstraintViolationException(ValidAspect.pack(_constraints), (Set<? extends ConstraintViolation<?>>) _constraints);
 			}
 		}
 	}
@@ -119,7 +119,7 @@ public class ValidProcessor {
 			if (!constraints.isEmpty()) {
 				//파라미터 순서 대로 출력되도록 set ordered 를 지원하는 TreeSet으로 변경 
 				Collection<ConstraintViolation<Object>> _constraints = sortParamaterIndex(constraints);
-				throw new ConstraintViolationException(ValidProcessor.pack((Collection) _constraints), (Set<? extends ConstraintViolation<?>>) _constraints);
+				throw new ConstraintViolationException(ValidAspect.pack((Collection) _constraints), (Set<? extends ConstraintViolation<?>>) _constraints);
 			}
 		}
 	}

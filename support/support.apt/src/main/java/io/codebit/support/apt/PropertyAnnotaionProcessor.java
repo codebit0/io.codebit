@@ -2,7 +2,7 @@ package io.codebit.support.apt;
 
 import com.github.mustachejava.DefaultMustacheFactory;
 import com.github.mustachejava.Mustache;
-import in.java.support.apt.annotation.*;
+import io.codebit.support.apt.annotation.*;
 
 import javax.annotation.processing.ProcessingEnvironment;
 import javax.annotation.processing.RoundEnvironment;
@@ -26,10 +26,10 @@ import java.util.stream.Collectors;
 //https://medium.com/@iammert/annotation-processing-dont-repeat-yourself-generate-your-code-8425e60c6657
 //https://stackoverflow.com/questions/5404851/generate-aspect-from-a-java-class
 @SupportedAnnotationTypes({
-        "main.java.apt.Getter",
-        "main.java.apt.Setter",
-        "main.java.apt.annotation.Date",
-        "main.java.apt.Value"
+        "maio.codebit.apt.Getter",
+        "maio.codebit.apt.Setter",
+        "maio.codebit.apt.annotation.Date",
+        "maio.codebit.apt.Value"
 })
 public class PropertyAnnotaionProcessor extends BaseAbstractProcessor {
 

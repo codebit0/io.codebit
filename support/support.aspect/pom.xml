@@ -2,9 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>in.java</groupId>
+        <groupId>io.codebit</groupId>
         <artifactId>support</artifactId>
-        <version>1.0.1</version>
+        <version>1.0.0</version>
     </parent>
     <artifactId>support.aspect</artifactId>
     <name>${project.groupId}.${project.artifactId}</name>
@@ -28,9 +28,9 @@
             <artifactId>aspectjweaver</artifactId>
         </dependency>
         <dependency>
-            <groupId>in.java</groupId>
+            <groupId>io.codebit</groupId>
             <artifactId>support.util</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>javax.inject</groupId>
@@ -89,15 +89,15 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>in.java</groupId>
+            <groupId>io.codebit</groupId>
             <artifactId>support.cdi</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.0</version>
             <scope>test</scope>
         </dependency>
         <!--<dependency>
-            <groupId>in.java</groupId>
+            <groupId>io.codebit</groupId>
             <artifactId>support.bci</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.0</version>
             <scope>test</scope>
         </dependency>-->
     </dependencies>

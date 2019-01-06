@@ -1,4 +1,4 @@
-package in.java.support.servlet;
+package io.codebit.support.servlet;
 
 import java.awt.Dimension;
 import java.io.FileNotFoundException;
@@ -21,16 +21,16 @@ import javax.mail.internet.MimeUtility;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import in.java.support.image.BitmapImage;
-import in.java.support.image.Gif;
-import in.java.support.image.Jpeg;
-import in.java.support.image.options.IWriteOption;
-import in.java.support.image.options.RatioOption;
-import in.java.support.system.Async;
+import io.codebit.support.image.BitmapImage;
+import io.codebit.support.image.Gif;
+import io.codebit.support.image.Jpeg;
+import io.codebit.support.image.options.IWriteOption;
+import io.codebit.support.image.options.RatioOption;
+import io.codebit.support.system.Async;
 
-import in.java.support.image.Bitmap.Format;
-import in.java.support.image.options.CropOption;
-import in.java.support.io.RegularFile;
+import io.codebit.support.image.Bitmap.Format;
+import io.codebit.support.image.options.CropOption;
+import io.codebit.support.io.RegularFile;
 
 public class ServerImageDownloader extends ServerDonwloader
 {

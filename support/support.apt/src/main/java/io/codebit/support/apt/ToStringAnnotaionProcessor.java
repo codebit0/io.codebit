@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
-@SupportedAnnotationTypes({"in.java.support.aspect.ToString"})
+@SupportedAnnotationTypes({"io.codebit.support.aspect.ToString"})
 public class ToStringAnnotaionProcessor extends BaseAbstractProcessor {
 
     private Mustache mustache;

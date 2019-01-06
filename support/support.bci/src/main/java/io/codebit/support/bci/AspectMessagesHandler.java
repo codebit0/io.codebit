@@ -35,7 +35,7 @@ public class AspectMessagesHandler extends DefaultMessageHandler implements IMes
                 if(IMessageHandler.class.isAssignableFrom(aspectClass)) {
                     System.out.println(message.getThrown());
                 }
-            } catch (ClassNotFoundException | NoSuchMethodException e) {
+            } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
 

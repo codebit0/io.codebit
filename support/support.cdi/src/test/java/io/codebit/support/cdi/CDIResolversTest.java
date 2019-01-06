@@ -31,7 +31,7 @@ public class CDIResolversTest {
 		
 	}
 	
-	@ComponentScan("in.java.support.cdi")
+	@ComponentScan("io.codebit.support.cdi")
 	@Configuration
 //	@Profile("production")
     static class ContextConfiguration {

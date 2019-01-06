@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>in.java</groupId>
+    <groupId>io.codebit</groupId>
     <artifactId>global</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
     <name>${project.groupId}.${project.artifactId}</name>
     <description>최상위 설정 pom</description>
@@ -20,7 +20,7 @@
         <!-- log -->
         <org.slf4j.version>1.7.25</org.slf4j.version>
         <ch.qos.logback-version>1.2.3</ch.qos.logback-version>
-        <global.version>1.0.1</global.version>
+        <global.version>1.0.0</global.version>
         <support.version>${global.version}</support.version>
     </properties>
     <build>
@@ -178,78 +178,78 @@
             </dependency>
             <!-- Module -->
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>global</artifactId>
                 <version>${global.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>model</artifactId>
                 <version>${global.version}</version>
             </dependency>
             <!-- Support -->
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.util</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.aspect</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.cdi</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.bci</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.servlet</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.mvc.spring</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.api.spring</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.webui.spring</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.apt</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.ignite</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.mybatis</artifactId>
                 <version>${support.version}</version>
             </dependency>
             <dependency>
-                <groupId>in.java</groupId>
+                <groupId>io.codebit</groupId>
                 <artifactId>support.image</artifactId>
                 <version>${support.version}</version>
             </dependency>

@@ -18,9 +18,9 @@ public class CacheAspectTest {
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
-//		AspectClassFileTransformer transformer = new AspectClassFileTransformer(ValidProcessor.class);
+//		AspectClassFileTransformer transformer = new AspectClassFileTransformer(ValidAspect.class);
 //		transformer.context().options("-verbose");
-//		Instrument.transform(Arrays.asList(transformer), Arrays.asList("in.java.support.aspect.test..*"));
+//		Instrument.transform(Arrays.asList(transformer), Arrays.asList("io.codebit.support.aspect.test..*"));
     }
 
     @AfterClass

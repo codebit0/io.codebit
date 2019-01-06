@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>in.java</groupId>
+		<groupId>io.codebit</groupId>
 		<artifactId>support</artifactId>
-		<version>1.0.1</version>
+		<version>1.0.0</version>
 	</parent>
 	<artifactId>support.mvc.spring</artifactId>
 	<name>${project.groupId}.${project.artifactId}</name>
@@ -93,16 +93,16 @@
 		</dependency>
 		<!-- Tmon -->
 		<dependency>
-			<groupId>in.java</groupId>
+			<groupId>io.codebit</groupId>
 			<artifactId>support.servlet</artifactId>
 			<!--<version>[1.0.0,)</version>-->
 		</dependency>
 		<dependency>
-			<groupId>in.java</groupId>
+			<groupId>io.codebit</groupId>
 			<artifactId>support.image</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>in.java</groupId>
+			<groupId>io.codebit</groupId>
 			<artifactId>support.util</artifactId>
 		</dependency>
 	</dependencies>

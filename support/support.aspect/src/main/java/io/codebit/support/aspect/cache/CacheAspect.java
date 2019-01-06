@@ -3,7 +3,7 @@ package io.codebit.support.aspect.cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
-import in.java.support.aspect.cache.context.*;
+import io.codebit.support.aspect.cache.context.*;
 import io.codebit.support.cache.ToStringGeneratedCacheKey;
 import io.codebit.support.aspect.cache.context.*;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -55,7 +55,7 @@ import java.util.concurrent.TimeUnit;
  * jsr 107
  */
 @Aspect("issingleton()")
-public class CacheProcessor {
+public class CacheAspect {
 
     private static LoadingCache<CacheRemoveAllMethodDetail, Cache<Object, Object>> REMOVE_ALL_CACHE = CacheBuilder.newBuilder().weakKeys()
             .refreshAfterWrite(5, TimeUnit.MINUTES)
