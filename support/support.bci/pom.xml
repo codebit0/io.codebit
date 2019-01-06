@@ -24,6 +24,11 @@
             <artifactId>aspectjweaver</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.codebit</groupId>
+            <artifactId>support.aspect</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>com.esotericsoftware</groupId>
             <artifactId>kryo</artifactId>
             <version>4.0.2</version>

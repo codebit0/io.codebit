@@ -137,7 +137,7 @@ public  class AspectClassFileTransformer implements ClassFileTransformer {
             @Override
             public String getWeaverOptions() {
 //                return weaverOptions;
-                return weaverOptions+ " -XmessageHandlerClass:AspectMessagesHandler";
+                return weaverOptions+ " -XmessageHandlerClass:io.codebit.support.bci.AspectMessagesHandler";
             }
         }
     }

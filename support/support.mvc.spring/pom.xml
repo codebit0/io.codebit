@@ -97,10 +97,10 @@
 			<artifactId>support.servlet</artifactId>
 			<!--<version>[1.0.0,)</version>-->
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>io.codebit</groupId>
 			<artifactId>support.image</artifactId>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>io.codebit</groupId>
 			<artifactId>support.util</artifactId>

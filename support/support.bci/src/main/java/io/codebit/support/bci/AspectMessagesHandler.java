@@ -20,20 +20,30 @@ public class AspectMessagesHandler extends DefaultMessageHandler implements IMes
 
     Event<String> debitEvent;
 
-    public boolean handleMessage(@Observes IMessage message) throws AbortException {
+    public boolean handleMessage(IMessage message) throws AbortException {
 //        ISourceLocation location = message.getSourceLocation();
 //        String sourceFileName = location.getSourceFileName();
 //        System.out.println(sourceFileName);
 //        System.out.println("VVVVVVVVVVVVVV  -- "+message);
 //        return super.handleMessage(message);
+        //weave information message
         if(message.getKind().equals(IMessage.WEAVEINFO)) {
             WeaveMessage weaveMessage = (WeaveMessage) message;
             try {
                 Class<?> aspectClass = Class.forName(weaveMessage.getAspectname());
                 Object o = Aspects.aspectOf(aspectClass);
+                if(o == null) {
+                    String affectedtypename = weaveMessage.getAffectedtypename();
+                    Class<?> typeClass = Class.forName(affectedtypename);
+                    o = Aspects.aspectOf(aspectClass, typeClass);
+                }
 //                aspectClass.getDeclaredMethod("handleMessage", IMessage.class);
                 if(IMessageHandler.class.isAssignableFrom(aspectClass)) {
                     System.out.println(message.getThrown());
+                    if(o != null) {
+                        IMessageHandler handler = (IMessageHandler) o;
+                        handler.handleMessage(message);
+                    }
                 }
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();

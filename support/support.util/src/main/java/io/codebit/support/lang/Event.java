@@ -14,20 +14,6 @@ public final class Event<TEventArgs extends EventObject>
 	
 	public void onEvent(Object sender, TEventArgs args)
 	{
-		/*int size = handlers.size();
-		for(int i=0; i < size; i++)
-		{
-			try
-			{
-				if(handlers.get(i) != null)
-				{
-					handlers.get(i).handlerEvent(sender, args);
-				}
-			}catch(Exception e)
-			{
-				
-			}
-		}*/
 		for(IEventHandler<TEventArgs> handler: handlers)
 		{
 			if(handler != null)
