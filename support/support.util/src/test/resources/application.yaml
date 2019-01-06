@@ -1,0 +1,32 @@
+# Details of a user
+---
+server:
+    address: 192.168.1.100
+---
+spring:
+    profiles: development
+server:
+    address: 127.0.0.1
+---
+spring:
+    profiles: production
+server:
+    address: 192.168.1.120
+servers:
+  - dev.bar.com
+  - foo.bar.com
+
+---
+port: 80
+hostname: foobar.com
+maxThreads: 100
+name: Test User
+age: 30
+address:
+  line1: My Address Line 1
+  line2: Address line 2
+  city: Washington D.C.
+  zip: 20000
+roles:
+  - User
+  - Editor

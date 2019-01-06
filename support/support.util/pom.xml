@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>in.java</groupId>
+		<artifactId>support</artifactId>
+		<version>1.0.1</version>
+	</parent>
+	<groupId>in.java</groupId>
+	<artifactId>support.util</artifactId>
+	<name>${project.groupId}.${project.artifactId}</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.21</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>25.1-jre</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.cache</groupId>
+			<artifactId>cache-api</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.mortennobel</groupId>
+			<artifactId>java-image-scaling</artifactId>
+			<version>[0.8.5,)</version>
+		</dependency> -->
+		 <!-- <dependency>
+	        <groupId>org.javatuples</groupId>
+	        <artifactId>javatuples</artifactId>
+	        <version>[1.2,)</version>
+	        <scope>compile</scope>
+    	</dependency> -->
+	</dependencies>
+</project>

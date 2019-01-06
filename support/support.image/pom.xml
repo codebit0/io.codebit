@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+        <artifactId>support</artifactId>
+        <groupId>in.java</groupId>
+        <version>1.0.1</version>
+    </parent>
+	<artifactId>support.image</artifactId>
+	<packaging>jar</packaging>
+	<name>${project.groupId}.${project.artifactId}</name>
+ 
+ 	<dependencies>
+ 		<dependency>
+ 			<groupId>in.java</groupId>
+ 			<artifactId>support.util</artifactId>
+ 			<version>[1.0.0,)</version>
+ 		</dependency>
+ 		<dependency>
+			<groupId>com.mortennobel</groupId>
+			<artifactId>java-image-scaling</artifactId>
+			<version>[0.8.5,)</version>
+		</dependency>
+		<!-- <dependency>
+		  <groupId>org.apache.commons</groupId>
+		  <artifactId>commons-imaging</artifactId>
+		  <version>1.0-SNAPSHOT</version>
+		</dependency> -->
+	    <!-- 
+	    <dependency>
+		  <groupId>org.apache.commons</groupId>
+		  <artifactId>commons-imaging</artifactId>
+		  <version>1.0-SNAPSHOT</version>
+		<dependency>
+         -->
+	    <!-- <dependency>
+	        <groupId>com.twelvemonkeys.imageio</groupId>
+	        <artifactId>imageio-jpeg</artifactId>
+	        <version>3.1.2</version>
+	    </dependency> -->
+	    <!-- <dependency>
+	        <groupId>com.twelvemonkeys.imageio</groupId>
+	        <artifactId>imageio-tiff</artifactId>
+	        <version>3.1.2</version>
+	    </dependency> -->
+ 	</dependencies>
+</project>
